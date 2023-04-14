@@ -60,6 +60,13 @@ export default function Test() {
                                       .slice(wordList[idx].length)
                                       .split("")
                                       .map((char, charId) => {
+                                text = text + <span
+                                                  key={char + charId}
+                                                  className="wrong extra">
+                                                  {char}
+                                              </span>;
+                                console.log(text):
+                                
                                           return (
                                               <span
                                                   key={char + charId}
